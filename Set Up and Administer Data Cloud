@@ -1,0 +1,174 @@
+Data Cloud Setup
+Set up your account and connect data sources to support your company’s business needs.
+
+Get to Know Data Cloud --------------------------------------
+
+Learning Objectives
+After completing this unit, you’ll be able to:
+ 1. Navigate the Data Cloud interface.
+ 2. Describe user roles and permissions.
+
+
+Welcome to Salesforce Data Cloud
+1. Take advantage of all your customer data and create viable insights at scale with Salesforce Data Cloud.
+2. In this module, we help you navigate Data Cloud and Data Cloud Setup,
+3. understand key tasks as an admin, and get you ready to support your company as an admin for Data Cloud.
+
+Before You Begin
+We assume you are a system admin and have access to Data Cloud Setup.
+We also assume you're familiar with Salesforce Lightning and general admin responsibilities. If not, that’s okay. Consider reviewing the Lightning Experience for Salesforce Classic Users module and the Admin Beginner trail.
+
+Note- data cloud access from sfdc acc - add permission set - Data Cloud Admin and Data cloud Marketing Admin
+From App launcher- search for Data cloud to access
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.....................
+Data Stream is a feature which helps you to connect your data cloud with multiple diff data sources
+A company contains many salesforce orgs - all the orgs can be connected to our data cloud
+Company has diff business lines - each business line will have a seperate org
+So from all those diff saleaforce org you have to bring data to data cloud
+We will be setting a data stream with that org.
+Data cloud tabs
+1. Home
+2. Data Streams
+3. Data Lake Objects
+4. Data Model
+5. Data Explorer
+6. Identity Resolutions
+7. Profile explorer
+8. Calculated insights
+9. More - 
+Data Action Targets
+Data Actions 
+Segments
+Activation targets
+Activations
+Data Transforms
+Reports
+Dashboards
+Data Graphs
+Query Editor
+Search Index
+Data Shares
+Data Share Targets
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
