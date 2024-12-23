@@ -73,8 +73,140 @@ Study and prepare for the Data Cloud Consultant certification.
 Cert Prep: Data Cloud Consultant
 Study resources for the Data Cloud Consultant exam.
 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Data Cloud Permission sets
+1. Data cloud Admin - full access to data cloud functions, requires salesforce Admin role for setup
+2. Data Cloud user - View Data cloud features
+3. Data cloud Marketing Admin - Requires Salesforce Admin Role for setup
+4. Data cloud Data Aware Specialist - Manage Data mapping and insights
+5. Data Cloud Marketing Manager - Handle segmentation strategy and activations
+6. Data Cloud Marketing specialist - create segments
+7. Data Cloud Home org Integration user
 
 
+Once the user has proper permission sets 
+
+Data Streams
+Data Streams in salesforce data cloud facilitate seamless data integration from various sources into salesforce
+for real time processing and analysis.
+
+Key features
+Real time data ingestion
+ > continuous data flow from multiple sources
+ > immediate availability for analytics and decision making
+
+Scalability
+ > Handles large volume of data efficiently
+ > supports horizontal scaling to accomodate growing data needs
+
+Salesforce Data Cloud enables the creation of a comprehensive Customer 360 data model by integrating data from various source systems. This model consolidates customer information from multiple platforms, including Salesforce standard objects like leads and contacts, as well as custom data from external sources such as Google Analytics, Facebook Meta Ads, SAP systems, Azure, and Google Cloud.
+
+The Customer 360 data model encompasses both standard and custom objects, allowing organizations to tailor their data structure to meet specific needs. Data can be sourced from a wide range of systems, including traditional software, external databases, CRM systems, e-commerce platforms, marketing tools, email databases, customer service software, digital engagement channels (like websites and mobile apps), and analytical platforms (such as Tableau and Power BI).
+
+To build this model, organizations must establish data streams that facilitate the flow of data into the Customer 360 framework. In previous sessions, the focus was on user setup and permissions within the Data Cloud, where users were assigned appropriate permission sets to access and manage the data effectively.
+
+Overall, the Customer 360 data model provides a holistic view of customer interactions and data across various touchpoints, enabling better insights and decision-making.
+
+
+Summary of Establishing Data Streams in Salesforce Data Cloud
+Data Cloud Permissions:
+
+Various permission sets are available in Salesforce Data Cloud, including:
+Data Cloud Admin
+Data Cloud User
+Data Cloud Marketing Admin
+Data Cloud Aware Specialist
+Marketing Manager
+Marketing Specialist
+Permissions can be assigned based on user roles and responsibilities, allowing for different levels of access and functionality.
+Establishing Data Streams:
+
+Data streams are essential for integrating data from source systems into the Data Cloud.
+Each source system has specific objects (known as Data Source Objects or DSOs) that can be connected to the Data Cloud.
+Examples of DSOs include leads, contacts, opportunities, and accounts.
+
+
+Integration Process:
+
+To bring data from Salesforce Sales Cloud into Data Cloud:
+Enable Sales Cloud Starter Bundle:
+Navigate to Data Cloud Setup and install the Sales Cloud Starter Bundle to access basic objects like leads, contacts, and accounts.
+
+Set Up Data Streams:
+> Go to Data Cloud Home and click on the option to create a new data stream.
+> Select "Salesforce CRM" as the source.
+> Choose the relevant Sales Cloud objects (e.g., leads, contacts, accounts) to establish the data stream.
+> Select or deselect specific fields to be included in the data stream, noting that some fields are required and cannot be unchecked.
+> After finalizing the selection, proceed to deploy the data stream.
+
+Service Cloud Integration:
+Similar to Sales Cloud, the Service Cloud Starter Bundle can be installed to integrate service-related objects (e.g., cases, tasks).
+Users can also establish data streams for custom objects not included in the starter bundles by selecting "All Objects."
+
+Final Steps:
+Once the data streams are established, the integration process allows for seamless data flow from various source systems into the Data Cloud, enabling a comprehensive view of customer data.
+
+This structured approach ensures that organizations can effectively integrate and manage their customer data across multiple platforms, enhancing their Customer 360 capabilities.
+
+
+Summary of Establishing Data Streams and Data Lake Objects in Salesforce Data Cloud
+
+Data Streams and Dependencies:
+Establishing data streams is crucial for integrating data from various source systems into Salesforce Data Cloud.
+Dependencies on fields must be resolved to successfully bring data from Service Cloud bundles into Data Cloud.
+For example, while integrating Service Cloud, certain objects (like tasks) can be brought in without dependencies, while others may require additional steps to remove dependencies.
+
+
+Categories of Data Objects:
+When establishing data streams, objects are categorized into three main types:
+> Profile Category: Contains Personally Identifiable Information (PII) about customers (e.g., first name, last name, email, phone number).
+> Engagement Category: Includes data related to customer interactions with marketing communications (e.g., email opens, clicks, unsubscribes).
+> Other Category: For data that does not fit into the above two categories.
+
+
+Integration Process:
+To integrate data from Service Cloud:
+Select the appropriate object (e.g., task) and define its category.
+Click "Next" and then "Deploy" to establish the data stream.
+
+Note - Data streams create connections to data source objects but do not initially bring in data.
+
+Data Lake Objects:
+A data lake object is automatically created when a data stream is established. 
+It serves as a container for the data that will be brought into Data Cloud.
+
+Data lake objects are designed to manage large volumes of structured and unstructured data.
+Initially, data lake objects may show zero records until data is fetched from the source.
+
+
+Mapping Data:
+After establishing data streams, it is essential to map data lake objects to the Customer 360 data model.
+Mapping ensures that data is organized and accessible within the Data Cloud.
+Standard objects (e.g., leads, contacts) are automatically mapped to corresponding data model objects (e.g., contact point email, contact point phone).
+
+Individual Object:
+The individual object is crucial for unifying customer profiles across different systems (e.g., Sales Cloud, Marketing Cloud).
+Mapping profile category data (like leads and contacts) to the individual object is essential for identity resolution, allowing for a single customer profile to be created.
+
+Connecting Multiple Salesforce Orgs:
+Organizations can connect multiple Salesforce orgs to Data Cloud to unify data from different sources.
+This allows for a comprehensive view of customer data across various Salesforce environments.
+
+Data Verification and Exploration:
+After establishing data streams and mapping, users can verify the data in Data Lake objects.
+Data Explorer can be used to explore the integrated data, ensuring that the data is correctly populated and accessible.
+
+Next Steps:
+Users are encouraged to create leads and contacts in their Salesforce orgs and connect them to Data Cloud.
+Understanding the functionalities of - 
+> establishing data streams, 
+> creating data lake objects, 
+> and mapping to data models is essential 
+for further exploring identity resolution and other advanced features in Data Cloud.
+
+
+This structured approach to establishing data streams and managing data lake objects in Salesforce Data Cloud ensures that organizations can effectively integrate and utilize their customer data for enhanced insights and decision-making.
 
 
 
