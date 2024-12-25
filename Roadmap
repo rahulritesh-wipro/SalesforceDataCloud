@@ -306,6 +306,66 @@ This structured approach to integrating Salesforce Marketing Cloud with Salesfor
 
 
 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Transcript: Integration of Salesforce Data Cloud and Marketing Cloud
+
+Introduction to Salesforce Data Cloud
+
+Salesforce Data Cloud is a robust platform designed to aggregate and manage customer data from various sources, creating a comprehensive Customer 360 profile. This profile provides organizations with a holistic view of their customers, enabling better insights and decision-making.
+Data Streams
+
+Data streams are essential connections established between Salesforce Data Cloud and various source systems, such as Salesforce Sales Cloud and Service Cloud. These streams facilitate the flow of data into the Data Cloud.
+Establishing Data Streams
+
+Integration with Salesforce: To initiate the integration, navigate to the Data Cloud Setup and select the appropriate Salesforce CRM from which to import data.
+Creating Data Streams: After selecting the source, create data streams for specific data types, such as leads and contacts. This involves defining the objects and their attributes that will be integrated into the Data Cloud.
+Data Lake Objects
+
+Upon the creation of a data stream, a corresponding data lake object is automatically generated.
+Data Stream: Represents the connection to a specific data source object (e.g., lead or contact).
+Data Lake Object: Serves as a container for the metadata associated with the data source object, facilitating the actual data transfer into the Data Cloud.
+Data Model Objects (DMOs)
+
+Data model objects are in-house constructs within Salesforce Data Cloud that mirror standard and custom objects from source systems.
+Upon establishing a data stream, DMOs are created to organize and manage the data brought into the Data Cloud. Key DMOs include:
+Contact Point Email: Stores email-related information.
+Contact Point Phone: Stores phone-related information.
+Contact Point Address: Stores address-related information.
+Individual Object: Represents a unique person and centralizes all data related to that person across different data sources.
+Mapping Process
+
+After establishing data streams, it is crucial to map the data lake objects to the appropriate DMOs. This mapping ensures that profile category data (e.g., leads, contacts) is correctly associated with the individual object, allowing for unified customer profiles.
+The individual object is vital for identity resolution, as it consolidates multiple records from different sources into a single profile.
+Handling Multiple Salesforce Orgs
+
+Organizations can connect multiple Salesforce orgs to Data Cloud, allowing for the integration of leads and contacts from different sources. This capability ensures that even if the same person exists as a lead in one org and a contact in another, they will be treated as a single individual in Data Cloud.
+Data Exploration
+
+Users can explore integrated data using the Data Explorer tool, which allows for viewing and editing the columns of data model objects. The Data Explorer provides insights into how data from various data streams is mapped to a single lead or contact object.
+Engagement Data
+
+Engagement data, which includes tracking interactions (e.g., email opens, clicks) from marketing communications, can also be integrated into Data Cloud. This data is typically sourced from Salesforce Marketing Cloud and is essential for creating a comprehensive view of customer interactions.
+Integrating Salesforce Marketing Cloud
+
+To integrate Salesforce Marketing Cloud with Salesforce Data Cloud:
+Navigate to the setup area and connect your Marketing Cloud account.
+Manage starter bundles to bring in engagement data, such as email-related and mobile engagement data.
+Using Data Extensions
+
+In Marketing Cloud, custom data extensions can be created, which function similarly to custom objects. These extensions can store specific information about customers, such as subscriber key, first name, last name, email address, phone number, and country.
+Bringing in Custom Data
+
+To integrate a custom data extension (e.g., B41 profile), create a new data stream and select the appropriate business unit and data extension. Specify the category of the data (e.g., profile) and select a primary key (e.g., subscriber key).
+Mapping Custom Data
+
+After creating the data stream for the custom data extension, manual mapping is required to link the data lake object to the appropriate data model objects in Data Cloud. This involves creating a new data model object that mirrors the attributes of the data extension (e.g., first name, last name, etc.).
+Link this data to the individual object to ensure that all information about a person is connected.
+Final Steps
+
+Once the mapping is complete, initiate the data stream to bring the data into Data Cloud. This process may take some time, but once completed, users can explore and analyze the data to gain insights about their customers.
+Monitoring Integration
+
+While the data stream is running, monitor the integration of the Salesforce Marketing Cloud starter bundles to ensure that all data streams are established correctly.
 
 
 
