@@ -1,0 +1,467 @@
+Learn About Data Cloud Core Capabilities  - ~2 hrs 10 mins . 9 Steps
+Note- Explore Data Cloud features, use cases, and best practices.
+
+
+ 1. unlock your data with data cloud - Complete this trail to gain the skills you need to become proficient with Data Cloud.
+ 2. Salesforce Data Cloud Quick look - Discover Data Cloud, the real-time platform for customer magic.
+ 3. Data Cloud use cases - Get the most out of Data Cloud for Sales, Service, Marketing, and more.
+ 4. Data Cloud powered experiences - Use Data Cloud to create personalized, real-time experiences across Salesforce and beyond.
+ 5. Data spaces in data cloud: quick look - Learn the benefits of using data spaces in Data Cloud.
+ 6. Data cloud basics for marketers - Discover the customer data platform for marketers and prepare for implementation.
+ 7. Data cloud for commerece quick look - Learn how to personalize the shopper experience with Data Cloud.
+ 8. Ethical Data Use in Personalization - Apply ethical use best practices to deliver responsible personalization solutions.
+ 9. Knowledge Check: Data Cloud Core Capabilities - Check your understanding Data Cloud core capabilities by completing this knowledge check.
+
+
+
+Set Up and Administer Data Cloud
+Note- Learn about the setup and administration tools for Data Cloud.
+
+1. Data Cloud Setup - Set up your account and connect data sources to support your company’s business needs.
+2. Watch: Data Cloud for Admins - Explore special considerations for setting up Data Cloud. Get tips for packaging, managing, and troubleshooting your Data Cloud instance.
+3. Create a Data Stream in Data Cloud - Connect your Salesforce data in Data Cloud.
+4. Packaging and Data Kits in Data Cloud - Learn how to create and package components in Data Cloud.
+5. Data Cloud Solutions on AppExchange: Quick Look - Expand the power of Salesforce with Data Cloud solutions on AppExchange.
+6. Set Up and Administer Data Cloud - Knowledge check
+
+Connect and Model Your Data - ~2 hrs 11 mins • 6 Steps
+Note - Connect various data sources and map your data.
+
+1. Ingestion and Modeling in Data Cloud - Connect your data sources and define their relationship in Data Cloud.
+2. Watch: Data Ingestion and Mapping - Prepare and organize data for mapping in Data Cloud.
+3. Watch: Demo: Ingestion - Explore data streams and available ingestion methods, ingest from Salesforce Sales Bundle, and map contacts from CRM.
+4. Watch: Demo: Mapped Data Model Object Relationships - Explore graph view for the data model, orphan objects, and create relationships between Data Model Objects (DMOs).
+5. Customer 360 Data Model for Data Cloud - Explore and use data model objects in Data Cloud.
+6. Streaming Data Transforms in Data Cloud: Quick Look - Enable customers to clean and prepare data as it enters the system in real time.
+7. Batch Data Transforms in Data Cloud: Quick Look - Create and schedule complex data transformations using batch data transforms.
+8. Knowledge Check: Connect and Model Your Data - Check your understanding of data connection and modeling by completing this knowledge check.
+
+
+Resolve Identity  ~1 hr 19 mins • 4 Steps
+Note- Explore the identity resolution process in Data Cloud.
+
+1. Data and Identity in Data Cloud - Learn the fundamentals of data mapping, identity resolution, and unified records.
+2. Watch: Identity Resolution - Learn about identity resolution and Unified Profiles.
+3. Quick Start: Create an Identity Resolution Ruleset - Use a ruleset to guide how Data Cloud unifies your customer profile data.
+4. Resolve Identity - Knowledge check
+
+Segment and Gain Insight    - ~3 hrs 45 mins • 9 Steps
+Note - Configure segmentation and get insights from your data.
+
+1. Quick Start: Enhance Data with Insights - Set up calculated insights with data from Data Cloud.
+2. Quick Start: Create a Data Cloud Segment - Learn how to create and activate a segment in Data Cloud.
+3. Segmentation and Activation - Create, filter, and activate marketing segments with Data Cloud.
+4. Quick Start: Enhance Data with Insights - Set up calculated insights with data from Data Cloud.
+5. Data Cloud Insights - Use your data effectively by creating calculated and real-time insights.
+6. Data Cloud Insights Using SQL - Use SQL to create calculated and streaming insights in Data Cloud.
+7. Insights Builder in Data Cloud - Use Insights Builder to create insights using a drag-and-drop visual builder.
+8. Connect Data Cloud to Copilot and Prompt Builder - Combine harmonized data and generative AI to create powerful interactions and automations.
+9. Knowledge Check: Segment and Gain Insight - Check your understanding of segmentation and insights in Data Cloud by completing this knowledge check.
+
+Act on Data --- ~38 mins • 4 Steps
+Note- Learn how to use activations and troubleshoot common issues.
+
+1. Watch: Act on Data - Learn about activations and their use cases. Use related attributes, analyze timing dependencies, and troubleshoot issues.
+2. Watch: Demo: Create a Data Action - Use data actions and identify their requirements and intended use cases.
+3. BYOL Data Shares in Data Cloud: Quick Look - Share data in Data Cloud using BYOL data shares.
+4. Knowledge Check: Act on Data - Check your understanding of data activations by completing this knowledge check.
+
+
+Get Certification Ready
+Study and prepare for the Data Cloud Consultant certification.
+
+Cert Prep: Data Cloud Consultant
+Study resources for the Data Cloud Consultant exam.
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+Notes--
+
+Learn About Data Cloud Core Capabilities  - ~2 hrs 10 mins . 9 Steps
+Note- Explore Data Cloud features, use cases, and best practices.
+
+
+ 1. unlock your data with data cloud - Complete this trail to gain the skills you need to become proficient with Data Cloud.
+ 2. Salesforce Data Cloud Quick look - Discover Data Cloud, the real-time platform for customer magic.
+ 3. Data Cloud use cases - Get the most out of Data Cloud for Sales, Service, Marketing, and more.
+ 4. Data Cloud powered experiences - Use Data Cloud to create personalized, real-time experiences across Salesforce and beyond.
+ 5. Data spaces in data cloud: quick look - Learn the benefits of using data spaces in Data Cloud.
+ 6. Data cloud basics for marketers - Discover the customer data platform for marketers and prepare for implementation.
+ 7. Data cloud for commerece quick look - Learn how to personalize the shopper experience with Data Cloud.
+ 8. Ethical Data Use in Personalization - Apply ethical use best practices to deliver responsible personalization solutions.
+ 9. Knowledge Check: Data Cloud Core Capabilities - Check your understanding Data Cloud core capabilities by completing this knowledge check.
+
+
+
+Set Up and Administer Data Cloud
+Note- Learn about the setup and administration tools for Data Cloud.
+
+1. Data Cloud Setup - Set up your account and connect data sources to support your company’s business needs.
+2. Watch: Data Cloud for Admins - Explore special considerations for setting up Data Cloud. Get tips for packaging, managing, and troubleshooting your Data Cloud instance.
+3. Create a Data Stream in Data Cloud - Connect your Salesforce data in Data Cloud.
+4. Packaging and Data Kits in Data Cloud - Learn how to create and package components in Data Cloud.
+5. Data Cloud Solutions on AppExchange: Quick Look - Expand the power of Salesforce with Data Cloud solutions on AppExchange.
+6. Set Up and Administer Data Cloud - Knowledge check
+
+
+---------------------------------------------------------------------------------------------------------------------------------------
+Connect and Model Your Data - ~2 hrs 11 mins • 6 Steps
+Note - Connect various data sources and map your data.
+
+1. Ingestion and Modeling in Data Cloud - Connect your data sources and define their relationship in Data Cloud.
+
+Prepare to Build Your Data Model
+Learning Objectives
+After completing this unit, you’ll be able to:
+
+Define key terms related to data ingestion and modeling.
+Identify the benefits of using Data Cloud.
+
+Plan Ahead
+It’s amazing how much data one person can generate. And how many different sources that data can come. Even a simple shopping trip can generate customer data related to sales messages, web traffic, purchases, preferences, location, and a multitude of other sources. As the data-aware specialist, you need to keep all that information organized and accessible so you can gain a more complete understanding of your customers. It’s your responsibility to make sure the data is in the right location and to create all the necessary linkage to complete your business analytics tasks.
+
+Defining your data model can be complex. You need to understand what data is collected (and how), the existing data structure, and how that data relates to other sources. And you need to bring all of that data together into a single, actionable view of your customer. Data Cloud gives you all the tools you need to create that single view, and then engage your customers.
+
+Before you dig into Data Cloud, do yourself a favor and grab a piece of paper, a notebook, a whiteboard, or whatever you want to doodle on. Map out a matrix of all your data sets in columns, then create rows for special considerations for each data set. 
+
+Data Sets
+
+When establishing the columns of your matrix, consider these factors.
+
+Take inventory on all the data sources you might want to incorporate:
+Traditional software
+External databases
+CRM
+Ecommerce
+Data lakes
+Marketing and email databases
+Customer service
+Digital engagement data (including web and mobile)
+Analytics
+Identify all data sets required for each data source, such as ecommerce data with data sets for sales order details and sales order header data.
+Special Considerations
+
+When establishing the rows of your matrix, consider these characteristics. 
+
+Understand the primary key (the value that uniquely identifies a row of data) of each data set.
+Identify any foreign keys in the data set. These ancillary keys in the source may link to the primary key of a different data set. (For example, the sales order details data set contains a product ID that corresponds to the item purchased. This product ID links to a whole separate table with more details about that product, such as color or size. The instance of product ID on the sales order details data set is the foreign key, and the instance of product ID on the product data set is the primary key.)
+Determine if the data is immutable (not subject to change once a record is sent) or if the data set needs to accommodate updates to existing records.
+Determine if there are any transformations you would like to apply to the data. (For example, you can use simple formulas to clean up names or perform row-based calculations.)
+Review the attributes, or fields, coming from each data source. If the same field is tracked across multiple sources, decide which data source is most trusted. You can set an ordered preference of sources later on.
+Make sure you have the authentication details handy to access each data set.
+Take note of how often the data gets updated.
+From Planning Your Concepts to Building Your Model
+Now that you’ve done the legwork to understand your end-to-end implementation, the rest of the work is just mechanics. As you can see in the diagram, we take a two-phased approach to bringing in data. 
+
+Data ingestion: Bring in all fields from a data set exactly as they are without modification. That way, you can always revert back to the original shape of the data should you make a mistake or change business requirements during setup. You can also extend the data set by creating additional formula fields for the purpose of cleaning nomenclature or performing row-based calculations. Each data set is going to be represented by a data stream in Data Cloud.
+Data modeling: Map the data streams to the data model in order to create a harmonized view across sources.
+As you complete this first step of ingesting each data set, refer back to your matrix and take a look at what you determined was the source of the data set. Within Data Cloud, there is a place to write in the name of the source. Next to the source, you specify the data set that you’re bringing in from that source by filling out the Object Label and Object API Name. 
+
+Refer to the primary key of the data set in your matrix and designate that field as the primary key when defining the data source object. Did you want to enhance the data set with any additional formula fields? This is the phase where you can apply formula logic. Remember when you indicated if the data is immutable or not? Data sets with event dateTime values may be good candidates for the category of type engagement in our system. Such behavioral data sets are organized into date-based containers. When Data Cloud reads the data later on to give you segmentation counts, it knows exactly where to look in order to retrieve the information quickly.
+
+Customer 360 Data Model
+Now imagine that all your data is ingested and each data set is speaking its own language. How do we get them all to understand one another? These data sets must all conform to the same universal language in order to begin interacting with one another. That’s where the second phase, data modeling, comes in. Data Cloud utilizes a data model known as the Customer 360 Data Model. 
+
+The model consists of several objects covering a number of subject areas. Those subject areas include (but aren’t limited to) Party, Product, Sales Order, and Engagement. The model is extensible, meaning that standard objects can have custom attributes added to them and new custom objects can be created with input from you on how that new object relates to other existing objects.
+
+Note
+Remember the foreign key designations you made in the matrix during the planning phase? You use this knowledge to extend the original footprint of the Customer 360 Data Model with your own custom objects.
+
+You can think of the Customer 360 Data Model as a way to assign a semantic context to your source objects that everybody can understand. For example, whether you call your home a flat, a house, or a condo, you can agree that it’s a place where a person lives. Similarly, you are creating a harmonized data layer for all data sources that is abstracted away from the underlying source objects. Consider offline orders data with an order field of Salescheck_Number and online orders data with an order field of Order_ID. While these fields are distinctly named, they are both references to an Order ID. So simply tag them both in mapping as the Customer 360 Data Model reference order ID. This process removes the information from the context of the various sources and arrives at a new data layer that conforms to a single taxonomy. No matter where it comes from, your data is standardized and usable within your tasks. And that is how we make all data sets speak the same language.
+
+Note
+Learn more about the standard data model in the badge Customer 360 Data Model for Data Cloud.
+
+Resources
+Salesforce Help: Data Ingestion and Modeling
+Trailhead: Customer 360 Data Model for Data Cloud
+Salesforce Help: Formula Expression Library
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+
+2. Watch: Data Ingestion and Mapping - Prepare and organize data for mapping in Data Cloud.
+
+Review Data Ingestion and Modeling Phases
+Learning Objectives
+After completing this unit, you’ll be able to:
+
+Examine how data is ingested into Data Cloud.
+Configure key qualifiers to help interpret ingested data.
+Apply basic data modeling concepts to your account.
+
+
+
+
+
+
+
+
+
+
+
+3. Watch: Demo: Ingestion - Explore data streams and available ingestion methods, ingest from Salesforce Sales Bundle, and map contacts from CRM.
+4. Watch: Demo: Mapped Data Model Object Relationships - Explore graph view for the data model, orphan objects, and create relationships between Data Model Objects (DMOs).
+5. Customer 360 Data Model for Data Cloud - Explore and use data model objects in Data Cloud.
+6. Streaming Data Transforms in Data Cloud: Quick Look - Enable customers to clean and prepare data as it enters the system in real time.
+7. Batch Data Transforms in Data Cloud: Quick Look - Create and schedule complex data transformations using batch data transforms.
+8. Knowledge Check: Connect and Model Your Data - Check your understanding of data connection and modeling by completing this knowledge check.
+
+-------------------------------------------------------------------------------------------------------------------------------------
+Resolve Identity  ~1 hr 19 mins • 4 Steps
+Note- Explore the identity resolution process in Data Cloud.
+
+1. Data and Identity in Data Cloud - Learn the fundamentals of data mapping, identity resolution, and unified records.
+2. Watch: Identity Resolution - Learn about identity resolution and Unified Profiles.
+3. Quick Start: Create an Identity Resolution Ruleset - Use a ruleset to guide how Data Cloud unifies your customer profile data.
+4. Resolve Identity - Knowledge check
+
+Segment and Gain Insight    - ~3 hrs 45 mins • 9 Steps
+Note - Configure segmentation and get insights from your data.
+
+1. Quick Start: Enhance Data with Insights - Set up calculated insights with data from Data Cloud.
+2. Quick Start: Create a Data Cloud Segment - Learn how to create and activate a segment in Data Cloud.
+3. Segmentation and Activation - Create, filter, and activate marketing segments with Data Cloud.
+4. Quick Start: Enhance Data with Insights - Set up calculated insights with data from Data Cloud.
+5. Data Cloud Insights - Use your data effectively by creating calculated and real-time insights.
+6. Data Cloud Insights Using SQL - Use SQL to create calculated and streaming insights in Data Cloud.
+7. Insights Builder in Data Cloud - Use Insights Builder to create insights using a drag-and-drop visual builder.
+8. Connect Data Cloud to Copilot and Prompt Builder - Combine harmonized data and generative AI to create powerful interactions and automations.
+9. Knowledge Check: Segment and Gain Insight - Check your understanding of segmentation and insights in Data Cloud by completing this knowledge check.
+
+Act on Data --- ~38 mins • 4 Steps
+Note- Learn how to use activations and troubleshoot common issues.
+
+1. Watch: Act on Data - Learn about activations and their use cases. Use related attributes, analyze timing dependencies, and troubleshoot issues.
+2. Watch: Demo: Create a Data Action - Use data actions and identify their requirements and intended use cases.
+3. BYOL Data Shares in Data Cloud: Quick Look - Share data in Data Cloud using BYOL data shares.
+4. Knowledge Check: Act on Data - Check your understanding of data activations by completing this knowledge check.
+
+
+Get Certification Ready
+Study and prepare for the Data Cloud Consultant certification.
+
+Cert Prep: Data Cloud Consultant
+Study resources for the Data Cloud Consultant exam.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
