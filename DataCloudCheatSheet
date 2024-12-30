@@ -1,0 +1,472 @@
+>>. All Data Cloud Tabs
+1. Data Streams
+2. Data Lake Objects
+3. Data Model
+
+4. Data Explorer
+5. Profile Explorer
+
+6. Identity Resolutions
+
+7. Calculated Insights
+
+8. Data Cloud setup gear icon
+
+
+> The tabs Data Streams, Data Lake Objects, and Data Model (1) focus on data. 
+> Data streams are the connected data sources added to your Data Cloud instance. 
+
+> The Data Explorer and Profile Explorer (2) tabs are data-viewing tools, allowing a view into ingested data, insights, and unified profiles.
+
+> The Identity Resolutions (3) tab is where your team creates match and reconciliation rules to unify individual or account records. 
+
+> The Calculated Insights (4) tab is where you can create batch or streaming insights based on your data. 
+
+> Finally, the Setup gear (5) is where you, the admin, do all the behind-the-scenes work.  
+
+
+Where can you find connected data sources in Data Cloud?
+A> Data Streams
+B> Data Model
+C> Segments
+D> Activation Targets
+ANS - Data Streams
+
+What access do you need to manage and assign users and access Data Cloud Setup?
+A> Data Cloud Marketing Data Aware Specialist
+B> System administrator
+C> Data Cloud Admin  and Salesforce Setup Specialist permissions
+D> Salesforce manager with a Data Aware Specialist permission set
+ANS - System administrator
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.
+
+Implementation Steps
+1. Create users and add permission sets.
+ > Permission sets help you manage the access users have in Data Cloud. 
+
+2. Connect to your Salesforce data.
+  > Install data bundles and create data streams. Data bundles are pre-modeled standardized data sets.
+
+3. Connect to other sources.
+  > From bringing in data to connecting using data federation, learn about all possible connectors and integrations.
+
+4. If using, create data spaces.
+  > Accounts come with a default data space, but more can be purchased.
+
+5. Prepare for ongoing tasks and maintenance.
+  > Set yourself up for success by establishing auditing and troubleshooting procedures.
+
+User Management
+In Data Cloud user permissions are determined by a permission set,
+which specifies the tasks users can perform and the features they can access. 
+After you create each user, you need to assign a permission set to the user. 
+
+To manage and assign users and access Data Cloud Setup, 
+you must have a system administrator user profile or permissions that grant access to Salesforce Setup. 
+If you have access to Salesforce Setup, you can set up Data Cloud and access other integrated Salesforce systems.
+
+To help you decide what permissions you need to give to each of your users, it’s good to start with the standard permission set options in Data Cloud.
+ref- https://help.salesforce.com/s/articleView?id=sf.c360_a_userpermissions.htm&type=5 
+
+Permission Set                                              Description
+
+Data Cloud Admin - Users with this permission set can access all functionality within Data Cloud, including mapping data to the data model and creating data streams, identity resolution rulesets, and calculated insights.
+
+Data Cloud User  - Users with this permission set can view Data Cloud features.
+
+Additional Segmentation and Activation Permission Sets
+
+Data Cloud Marketing Admin -  Users with this permission set can access all functionality within Data Cloud, including mapping data to the data model and creating data streams, identity resolution rulesets, and calculated insights.
+
+Data Cloud Marketing Manager - Users with this permission set can manage an overall segmentation strategy, including creating activation targets and activations.
+
+Data Cloud Marketing Data Aware Specialist - Users with this permission set can map data to the data model and create data streams, identity resolution rulesets, and calculated insights.
+
+Add Users and Permission Sets
+Here is how to set up users and assign permission sets. You can do this now or come back to this step later. You also have to give yourself a permission set to access Data Cloud features.
+
+Go to Data Cloud Setup.
+Under User Management, click Users.
+Add new users or edit an existing user.
+Select a user and click Permission Set Assignments.
+Click Edit Assignments.
+Select the appropriate Data Cloud permission set and click Add.
+Click Save.
+As soon as you complete these steps, your new user receives an email notification with login information,
+
+What are steps you can perform in Data Cloud Setup as an system admin?
+A> Create data spaces, as needed
+B> Assign permission sets to your users.
+C> Create an audience segment.
+D> A and B
+E> B and C
+ANS - A and B
+
+What should you consider before creating new users?
+A> Available standard permission sets
+B> What access a user needs in Data Cloud
+C> Data Cloud certification
+D> A and B 
+ANS -  A and B 
+
+
+To get the benefits of Data Cloud, you need to connect your data regardless of where that data lives.
+Connections to those data sources are made in Data Cloud Setup by a system admin. 
+So even if you don’t have credentials, you’ll need to gather that information from your colleagues before you set up your sources. 
+
+Steps to Set Up Data Cloud Connections
+Gather Credentials and Information:
+
+Before you start setting up connections, collect the necessary credentials and connection details from your colleagues. This may include usernames,
+passwords,
+API keys,
+and endpoint URLs.
+
+Access Data Cloud Setup:
+Log in to your Salesforce account and navigate to the Data Cloud Setup. This is typically found in the setup menu.
+
+
+Create a New Connection:
+In the Data Cloud Setup, look for the option to create a new connection. 
+This may be labeled as "Add Data Source" or "New Connection."
+
+Select the Data Source Type:
+Choose the type of data source you want to connect to. Salesforce supports various integrations, including:
+Salesforce Objects
+External Databases (e.g., MySQL, PostgreSQL)
+Cloud Storage (e.g., AWS S3, Google Cloud Storage)
+APIs (REST, SOAP)
+Other SaaS applications (e.g., HubSpot, Marketo)
+Enter Connection Details:
+
+Fill in the required fields with the information you gathered. This typically includes:
+Connection Name
+Data Source Type
+Hostname or URL
+Port Number (if applicable)
+Authentication Method (e.g., Basic Auth, OAuth)
+Username and Password or API Key
+Test the Connection:
+
+After entering the details, use the "Test Connection" feature to ensure that the connection is successful. If there are any errors, double-check the credentials and settings.
+
+Save the Connection:
+Once the connection is successfully tested, save the configuration. This will allow Data Cloud to access the data from the specified source.
+
+Monitor and Manage Connections:
+Regularly check the status of your connections in Data Cloud Setup. Ensure that they remain active and troubleshoot any issues that may arise.
+
+
+Finding External Integrations and Connectors
+
+Salesforce provides a variety of external integrations and connectors that can be utilized with Data Cloud. To explore these options:
+Salesforce AppExchange: 
+Browse the AppExchange for third-party applications that offer connectors to popular data sources.
+
+Salesforce Documentation: 
+Refer to the official Salesforce documentation for a comprehensive list of supported integrations and detailed setup instructions.
+
+Community Forums: 
+Engage with the Salesforce community to learn about best practices and recommendations for specific integrations.
+
+Conclusion
+Setting up Data Cloud connections is a crucial step in harnessing the power of your organization's data. By following the outlined steps and utilizing available resources, you can create a robust data integration framework that supports your business needs. Remember to collaborate with your colleagues to gather the necessary information and ensure a smooth setup process.
+
+
+Connect Marketing Cloud Engagement
+prerequisites:- for your Marketing Cloud Engagement account.
+> admin access to Marketing Cloud Engagement. 
+> Your Marketing Cloud Engagement account also needs to default to the EID (the topmost parent business unit) to access each of the child business units to be used in activation.
+
+Once confirmed, you can move forward. From within your Data Cloud account, follow these steps to connect to Marketing Cloud Engagement. 
+From Data Cloud Setup, under Salesforce Integrations and Marketing, select Marketing Cloud Engagement.
+Under Configuration, click
+
+Step 1: Enter Credentials
+To connect your Marketing Cloud Engagement account, click Manage. 
+Enter your Marketing Cloud Engagement admin username and password.
+Step 1 is done.
+
+Step 2: Data Source Setup
+
+Now it’s time to connect and configure the data bundles under Data Source Setup. 
+Note- starter data bundles are pre-modeled standardized data sets and are available for Marketing Cloud Engagement Email Studio, MobileConnect, and MobilePush.
+
+> Click Manage to select data bundles to import into Data Cloud.
+
+> Select the bundles you want from: Email, MobileConnect, MobilePush, and WhatsApp.
+These sources are auto-selected for import, but only select the data bundles of the channels you currently use.
+
+> Click Start to confirm the bundles for import.
+
+Now it’s time to confirm the business units that can provide data to a Data Cloud account. 
+
+Click Manage to select business units to ingest data from.
+Use the arrows to add or remove business units to the Selected Business Units (BUs) field.
+Click Save.
+
+After configuring your data bundles, 
+Data Cloud creates a set of automations and automation activities in Marketing Cloud Engagement Automation Studio. 
+These automations transfer data between the two products. 
+Make sure to tell your Marketing Cloud Engagement users that they shouldn’t alter or edit these activities.
+
+Step 3: Business Unit Activation Setup
+
+Step one and two are complete. Decide which business units you want to use Data Cloud segments.
+
+Click Manage to select which of your available Marketing Cloud Engagement business units to activate.
+Use the arrows to add or remove business units to the Selected business units field.
+Click Save.
+Once you see a 100% completion in your progress bar, your implementation is complete. Woo-hoo!
+
+Connect Sales Cloud and Service Cloud
+Ready to connect your Sales Cloud and Service Cloud accounts? The account you are logged into is pre-connected, but if you have additional orgs or a sandbox org you need to connect, follow these steps.  
+
+From Data Cloud Setup, under Salesforce Integrations, select Salesforce CRM.
+Click New from the Connectors section.
+Select either Connect to a Salesforce Org or Connect to a Sandbox Org, then click Next.
+Create a Connection Alias and then click Proceed.
+Log in to the org using your Salesforce credentials.
+The login for a Salesforce production or developer org is https://salesforce.com. The login for a sandbox org is https://test.salesforce.com.
+Click Allow in the Allow Access menu.
+Your org is now available from the Salesforce CRM Connectors page.
+
+
+Standard Data Bundles
+
+After connected, you can install standard (sometimes called starter) data bundles to quickly deploy data within Data Cloud. 
+A data bundle automatically maps Salesforce objects to the Data Cloud data model object (DMO) structure. 
+You can also customize a bundle.
+
+Under Standard Data Bundles, click the dropdown arrow for either Sales Cloud or Service Cloud and click Install.
+In the data kit install window, select Install for Admins Only and click Install.
+When the installation completes, click Done.
+
+External Connectors
+In addition to Salesforce integrations, there are hundreds of available connectors and integrations. 
+Connectors allow data to be ingested and stored in Data Cloud or simply create a zero copy connection using data federation. Each type of connector requires slightly different implementation steps, so be sure to review the documentation to know what information is needed to establish the initial connection. Bookmark this page to find all the connectors and associated documentation.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
