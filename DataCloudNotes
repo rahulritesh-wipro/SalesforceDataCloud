@@ -110,6 +110,171 @@ Note- Learn about the setup and administration tools for Data Cloud.
 
 2. Watch: Data Cloud for Admins - Explore special considerations for setting up Data Cloud. Get tips for packaging, managing, and troubleshooting your Data Cloud instance.
 
+You need to be an admin with proper access to data cloud in order to perform these tasks
+Feature - Data Cloud Setup
+Permission Set - Data Cloud Admin, Data Cloud Marketing Admin
+Not needed - Data Cloud User, Data Cloud Data Aware Specialist, Data Cloud Marketing Manager, Data Cloud Marketing Specialist
+
+Data Cloud is built on top of the salesforce platform, so you can take advantage of core salesforce org capabilities like
+reports, dashboards, flows, authentication, application's objects.
+Additionally it offers the flexibility to utilize APIs and establish integrations with other salesforce products. 
+
+Note- Data Cloud stores ingested data in a data lake outside of the core CRM. It doesn't store that data in the 
+standard salesforce database.
+
+Before you setup data cloud it is helpful to have a look at the architecture and data residency requirements
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              Flow Automation
+              Einstein Intelligence
+                    Metadata
+Transactional Database----------Data cloud
+
+                  Hyperforce
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+                         Salesforce.org                 Existing customer data org
+                      Sales           Service
+                     Experience         APP
+                      OMS              Loyalty
+
+                          Data Cloud
+                             |
+                             |
+                           Data cloud Data lake  -- ingested data persisted off- core
+ Note- 
+1. Data Ingestion :  Data is brought into the data cloud in its original form and stored in a data lake object (DLO)
+2. Data Federation : Connect directly to data sources using Zero-ETL, avoiding data copying.
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Your options are to provision data cloud in an existing salesforce org or to provision a new seperate home org.
+provisioning data cloud in an existing salesforce org makes sense when your company has maybe a single line of business then 
+you have a single salesforce org.
+And you primary use cases require out of the box Data cloud Lightning Web Components LWCs and search capabilities for service
+agents.
+
+When provisioning data cloud in an existing org, keep in mind that a single data cloud instance can still connect to multiple
+different salesforce orgs if you need to.
+The Data Lake will still separately persist and ingest data off-core. In other words not in the salesforce database.
+Data cloud still requires API access to S-objects from within this existing org because it replicates data to the Data Lake.
+When you migrate org data or perhaps refactor your object model, you may need to reimplement or rework data cloud.
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Salesforce.org
+Data Cloud
+   |
+   |
+
+Data cloud data lake  ---- ingested data persisted off-core
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Deploying a brand new salesforce org to house data cloud makes sense when your maybe your company has multiple salesforce orgs
+so you can dedicate one to Data cloud or if you have a highly complex enterprise architecture.
+
+Your data cloud administrators are different from your salesforce administrators or perhaps your existing data org is highly 
+customized.You just don't want to mess with it.
+When deploying data cloud in a brand new org, keep in mind that you probably need to build custom LWCs in the new org to 
+provide users with data cloud data views.
+
+Data cloud can still connect to multiple salesforce core orgs but only one Enterprise Edition Marketing cloud org.
+
+Let's review a few best practices for successful packaging, management and troubleshooting of your data cloud instance.
+Data cloud supports both unmanaged and managed packaging.
+For managed packages, we recommend you use versioning and push upgrades. use package versions to upgrade the components in 
+newer package versions without breaking functionality for existing users.
+use the push upgrade feature to automatically upgrade to a newer version of the package ensuring that all of your orgs
+are on the same or latest version of your package.
+You should use a package to distribute data cloud information to other orgs.
+Currently, Data cloud supports the packaging of data streams, data models and calculated insights.
+You should also consider using data kits which help you streamline the package creation and installation process.
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Developer org  ------ Start > Create And Map CRM data streams > Create new data kit > Add CRM Data Stream and Data Model
+
+                                                                                       Package kit will suggest
+                                                                                       related feature meta data
+
+                        >  Create And Upload Managed/Unmanaged Package ---------
+                                                                                |
+                     ------------------------------------------------------------
+                     |                                                                             
+
+Subscriber org ---- Install managed/unmanaged package > Create CRM data Stream from Data kit > Data models mapped automatically
+
+                       > Test and Validate data against Segment
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+When you create a salesforce package, it automatically includes all of the related meta data or none of it.
+This approach is a simple way to ensure platform referential integrity is intact.
+However this all or nothing approach can introduce a lot of dulplicated metadata or cause certain functionalities to fail due to
+lack of related metadata.
+Because of this, there are important reasons why you might consider using Data Kits for data cloud.
+Firstly you deploy updates with confidence, minimizing human errors, Then you streamline deployments to deliver a complete 
+solution and help you realize increased business value. 
+Check out our packaging and data kits in data cloud module in trailhead for detailed information on creating, publishing, 
+and installing data kits. 
+
+Data Clous is now supported in sandbox environments as an open beta. You can use sandboxes for developemnt testing and training 
+in an isolated environment. Ensuring your production data and applications remain unaffected. 
+
+Diagnose and explore data using profile explorer, data explorer and the APIs.
+With Lightning App builder, admins can customize and organize their data cloud, unified profile record pages to quickly surface
+insights most relevant to their teams. Each unified individual has one page available for customization and it is viewable 
+by all user groups.
+Currently the page customization is orgwide.
+All the users in the org see the same layout.
+The Profile Explorer record page within data cloud can be customized with App builder to display records associated 
+with a unified profile.
+
+
+Use data explorer within the data cloud to view and validate the data that exists in your data model objects- your DMOs, 
+your data lake objects your DLOs and calculated insights.
+
+You use data explorer to ensure your data, formula and other transformations are accurate. You can also use filters to include
+or exclude records as you see it.
+In the CRM org where data cloud is provisioned, you can use data cloud components on the contact record. The contact record page
+can be customized with data cloud profile engagements, Data cloud profile insights and data cloud profile related records.
+
+Sharing rules are used to extend sharing access to users in public groups, roles or territories for your data cloud objects.
+The objects currently supported include data streams, Calculated insights, segments, activations and activation targets
+
+Sharing rules in salesforce consist of three main components:
+> Defining the records to be shared based upon ownership and criteria
+> specifying the user or group by role, territory or public group to share with
+> and setting the access level to either read only or read write permissions
+
+When you publish a segment a segment membership DMO is automatically generated.
+This DMO enables you to verify the accuracy of test data within your creator segment and to gain detailed insights into the 
+makeup of your segment's members.
+
+Track the profiles that have joined or left the segment over time and view segment membership details when examining specific
+profiles.
+
+Data cloud allows you to use various tools and products to analyze our data including Tableau, CRM analytics and 
+Marketing intelligence.
+Analytice reports and dashboards are used for data that lives in data cloud including the DLOs, the data lake objects, the DMOs 
+the data model objects and calculated insights.
+
+Administrator reports and dashboards are built on data cloud configuration objects so you can visualize your use of data cloud
+The following objects are currently supported on Lightning Report Builder:
+> Data Stream,
+> Segment, 
+> activation targets
+> and identity resolution. 
+
+To create a report on a data cloud object you will need to configure a custom report type. And once that custom report type
+is created, it will be available to you in Lightning Report Builder.
+Lightning Reports are created to help you understand your data such as Data cloud segments by their status and their 
+population count, publish status and publish schedule. 
+
+   
+
+
+
+
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 3. Create a Data Stream in Data Cloud - Connect your Salesforce data in Data Cloud.
