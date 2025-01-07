@@ -1,7 +1,11 @@
-Learn About Data Cloud Core Capabilities  - ~2 hrs 10 mins . 9 Steps
-Note- Explore Data Cloud features, use cases, and best practices.
+
+
+sandbox url - https://orgfarm-700c078e12-dev-ed.develop.my.salesforce.com/?ec=301&startURL=%2Fvisualforce%2Fsession%3Furl%3Dhttps%253A%252F%252Forgfarm-700c078e12-dev-ed.develop.lightning.force.com%252Flightning%252Fpage%252Fhome
 
 username epic.f0871736144509279@orgfarm.th
+
+Learn About Data Cloud Core Capabilities  - ~2 hrs 10 mins . 9 Steps
+Note- Explore Data Cloud features, use cases, and best practices.
 
  1. unlock your data with data cloud - Complete this trail to gain the skills you need to become proficient with Data Cloud.
  2. Salesforce Data Cloud Quick look - Discover Data Cloud, the real-time platform for customer magic.
@@ -348,9 +352,95 @@ Here’s what that means:
 Conclusion
 In simple terms, Starter Data Bundles are ready-to-use sets of data provided by Salesforce that help businesses quickly access and analyze important customer information. They come with a predefined structure that makes it easy to understand and use the data, allowing companies to focus on gaining insights and making informed decisions.
 
+Create a Data Stream
+
+Connect Your Data Sources
+Before you can ingest data into Data Cloud, an admin needs to configure any data source that you’d like to connect.
+Data sources can be other Salesforce orgs, Marketing Cloud Engagement business units, external platforms, CSV files, and more! For this project, we’ve already connected a Service Cloud org to your Developer org.
+
+Navigate Data Cloud
+After logging into your Developer Org, navigate to Data Cloud from the App Launcher (grid icon) and type in Data Cloud. 
+
+Create a Data Stream from a Data Bundle
+Since an admin has set up your data sources already, you can now add data streams to Data Cloud. 
+
+> In Data Cloud, go to the Data Streams tab and click New.
+> Click Salesforce CRM under Connected Sources, and click Next.
+> Note the Salesforce Org is pre-selected. Choose the Sales data bundle and click Next.
+> Notice that the default Data Space is pre-selected and all the fields included in the bundle are listed. Leave the selections 
+  as is, and click Next.
+> Click Deploy.
 
 
 
+Create a Formula Field
+The benefit of starter data bundles is that they are pre-mapped to the Customer 360 Data Model and can be customized to meet your business needs. When you create a Data Cloud data stream, you can choose to generate more fields, called formula fields. These optional fields are helpful when you want to configure data to standardize formatting; add keys to help join and map data; or add flags for data that meets criteria, like “Has Birthday before 1991.” 
+
+For this project, you create a formula field to identify leads that are located in the United States, based on the data found in the Country field of the data lake object (DLO). 
+
+> From the Data Stream tab, locate and click the Lead_Home data stream that you created.
+> From the Lead_Home data stream record, click the New Formula Field button.
+> For Field Label, name your field Is US Based.
+> Confirm the Filed API Name is Is_US_Based.
+> For Formula Return Type, select Text.
+> Enter this formula in the Transformation Formula field: IF(sourceField['Country'] == "USA" || sourceField['Country'] == 
+  "United States", "TRUE" , "FALSE")
+
+Validate the constructed formulas using the Tested Value panel:
+> Type Japan into the country field and then click Test.
+> Output should = FALSE.
+> Type USAand then click Test.
+> Output should = TRUE.
+
+Once you have successful validation, click Save.
+Verify Your Data Stream and Formula Field
+
+Now that you have completed these steps in your Developer Org, click Verify Step to check your work before moving to the next step in the project: adding fields to the DMO and mapping data to the Customer 360 Data Model.  
+--------------------------------------------------------------------------------------------------------------------------
+Add and Map a Formula Field
+Map Your Field to a Data Model Object
+
+> Data Cloud has a lot of cool capabilities (such as identity resolution, segmentation, and creating calculated insights). 
+> And to use these, you first need to map your ingested data to data model objects (DMOs). 
+> When using Salesforce standard data bundles like we’re doing in this project, some standard data objects are pre-mapped for 
+  you.
+> Since you added a new custom formula field (and often businesses have other standard and custom objects in their data sources), these fields need to be manually mapped to the Customer 360 Data Model. 
+
+Map those unmapped fields!
+> Click the Data Streams tab and then select the data stream, Lead_Home.
+> From the Data Mapping section, click Review.
+> On one side of the screen are the searchable (1) Data Lake Objects (DLOs). On the other side, are the searchable (2) DMOs 
+  (called Data Model entities in-app). To search for a field within a DLO use the DLO search bar (3) in this case, Lead_Home.
+> Name the Field, Is US Based and select Text as the Data Type.
+> Click Save.
+> Now under the Data Lake Object, Lead_Home, search for the unmapped field Is US Based.
+> Select Is US Based until highlighted and then under Data Model entities, scroll to the Lead section and under Unmapped select 
+  the newly created Is US Based custom field.
+> After a line is drawn to connect the two fields, click Save. 
+Now let’s map a few other fields from the Lead_Home DLO that haven’t been mapped yet.
+
+Under the Lead_Home DLO search box, search for the field Industry and click it.
+Under Data Model entities, search for Industry. You’ll find it in the Lead section.
+Map the two together by clicking on the DLO, then on the DMO.
+After a line is drawn to connect the two fields, click Save.
+Now locate Phone under the Lead_Home search box. Notice it is already mapped to Telephone Number. We also need to map it to Formatted E164 Phone Number.
+Click on Phone to select it and then locate Formatted E164 Phone Number from the Unmapped section of Contact Point Phone.
+Select Formatted E164 Phone Number.
+After a line is drawn to connect the two fields, click Save & Close.
+Prep for Identity Resolution
+To unify profiles with Identity Resolution, some additional fields are required to be mapped. Map those fields.
+
+​From Data Streams, select the Contact_Home data stream.
+Under Data Mapping, click Review.
+Following similar steps to above, map Business Phone from the Contact_Home DLO to Formatted E164 Phone Number under the Contact Point Phone entity.
+Click Save & Close.
+Follow these steps for the Account data stream.
+
+From Data Streams go to the Account_Home data stream.
+Map Account ID to Party under the Contact Point Address entity.
+Map Account ID to Party under the Contact Point Phone entity.
+Map Account Phone to Formatted E164 Phone Number under the Contact Point Phone entity.
+Once done, click Save & Close.
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 4. Packaging and Data Kits in Data Cloud - Learn how to create and package components in Data Cloud.
